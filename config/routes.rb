@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :ingredients
+
   get 'colophon/colophon' => 'colophon#colophon'
 
   get 'welcome/hello'

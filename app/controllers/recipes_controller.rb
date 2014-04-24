@@ -13,6 +13,7 @@ class RecipesController < ApplicationController
   # GET /recipes/1
   # GET /recipes/1.json
   def show
+    @title = "#{@recipe.name} - Bake Helper"
   end
 
   # GET /recipes/new
