@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'colophon/colophon' => 'colophon#colophon'
+
   get 'welcome/hello'
 
   resources :recipes, except: :destroy
