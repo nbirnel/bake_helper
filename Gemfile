@@ -45,3 +45,7 @@ gem 'spring',        group: :development
 group :test, :development do
   gem 'rspec-rails'
 end
+
+group :production do
+  gem 'pg'            #postgres
+end
