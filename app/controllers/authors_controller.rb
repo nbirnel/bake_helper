@@ -11,7 +11,7 @@ class AuthorsController < ApplicationController
   # GET /authors/1
   # GET /authors/1.json
   def show
-    @title = "#{@author.name} - Bake Helper"
+    super
   end
 
   # GET /authors/new

@@ -11,7 +11,7 @@ class IngredientsController < ApplicationController
   # GET /ingredients/1
   # GET /ingredients/1.json
   def show
-    @title = "#{@ingredient.name} - Bake Helper"
+    super
   end
 
   # GET /ingredients/new

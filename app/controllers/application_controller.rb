@@ -7,3 +7,8 @@ end
 def index
   @title = "#{self.controller_name.capitalize} - Bake Helper"
 end
+
+def show
+  name = eval "@#{self.controller_name.singularize}.name"
+  @title = "#{name} - Bake Helper"
+end
