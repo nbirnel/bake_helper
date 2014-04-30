@@ -5,13 +5,13 @@ class AuthorsController < ApplicationController
   # GET /authors.json
   def index
     @authors = Author.all
-    @title = 'Authors - Bake Helper'
+    super
   end
 
   # GET /authors/1
   # GET /authors/1.json
   def show
-    @title = "#{@ingredient.name} - Bake Helper"
+    @title = "#{@author.name} - Bake Helper"
   end
 
   # GET /authors/new

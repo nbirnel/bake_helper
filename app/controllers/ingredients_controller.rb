@@ -5,7 +5,7 @@ class IngredientsController < ApplicationController
   # GET /ingredients.json
   def index
     @ingredients = Ingredient.all
-    @title = 'Ingredients - Bake Helper'
+    super
   end
 
   # GET /ingredients/1
