@@ -15,6 +15,13 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+
+  <div class="field">
+    <%= f.label :type %><br>
+    <%  o = options_for_select([['flours', 'flours'], ['liquids', 'liquids'], ['additives', 'additives']], 'liquids') %>
+    <%= f.select(:type, o) %>
+  </div>
+
   <div class="field">
     <%= f.label :price_per_pound %><br>
     <%= f.text_field :price_per_pound %>

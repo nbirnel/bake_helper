@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140430205211) do
+ActiveRecord::Schema.define(version: 20140430225305) do
 
   create_table "authors", force: true do |t|
     t.string   "name"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20140430205211) do
     t.decimal  "price_per_pound"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "type"
   end
 
   create_table "quantities", force: true do |t|
