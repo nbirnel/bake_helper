@@ -5,10 +5,13 @@ class ApplicationController < ActionController::Base
 end
 
 def index
+  # eg "Recipes - Bake Helper"
   @title = "#{self.controller_name.capitalize} - Bake Helper"
 end
 
 def show
-  name = eval "@#{self.controller_name.singularize}.name"
-  @title = "#{name} - Bake Helper"
+  # eg @recipe
+  item = eval "@#{self.controller_name.singularize}"
+  # eg "White Bread - Bake Helper"
+  @title = "#{item.name} - Bake Helper"
 end
