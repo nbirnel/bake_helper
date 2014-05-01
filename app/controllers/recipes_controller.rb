@@ -19,10 +19,12 @@ class RecipesController < ApplicationController
   # GET /recipes/new
   def new
     @recipe = Recipe.new
+    super
   end
 
   # GET /recipes/1/edit
   def edit
+    super
   end
 
   # POST /recipes

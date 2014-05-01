@@ -15,3 +15,15 @@ def show
   # eg "White Bread - Bake Helper"
   @title = "#{item.name} - Bake Helper"
 end
+
+def new
+  # eg "New Recipe - Bake Helper"
+  @title = "New #{self.controller_name.singularize.capitalize} - Bake Helper"
+end
+
+def edit
+  # eg @recipe
+  item = eval "@#{self.controller_name.singularize}"
+  # eg "Edit White Bread - Bake Helper"
+  @title = "Edit #{item.name} - Bake Helper"
+end

@@ -17,10 +17,12 @@ class IngredientsController < ApplicationController
   # GET /ingredients/new
   def new
     @ingredient = Ingredient.new
+    super
   end
 
   # GET /ingredients/1/edit
   def edit
+    super
   end
 
   # POST /ingredients

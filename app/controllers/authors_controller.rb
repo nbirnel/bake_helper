@@ -17,10 +17,12 @@ class AuthorsController < ApplicationController
   # GET /authors/new
   def new
     @author = Author.new
+    super
   end
 
   # GET /authors/1/edit
   def edit
+    super
   end
 
   # POST /authors
