@@ -28,6 +28,7 @@ describe RecipesController do
     end
 
     it "routes to #destroy" do
+      pending
       delete("/recipes/1").should route_to("recipes#destroy", :id => "1")
     end
 
