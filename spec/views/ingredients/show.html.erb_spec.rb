@@ -4,7 +4,6 @@ describe "ingredients/show" do
   before(:each) do
     @ingredient = assign(:ingredient, stub_model(Ingredient,
       :name => "Name",
-      :quantity => "Quantity",
       :price_per_pound => "9.99"
     ))
   end
@@ -13,7 +12,6 @@ describe "ingredients/show" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Name/)
-    rendered.should match(/Quantity/)
     rendered.should match(/9.99/)
   end
 end
