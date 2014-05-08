@@ -7,15 +7,15 @@ describe "recipes/index" do
         :name => "Name",
         :prep_time => "Prep Time",
         :attribution => "Attribution",
-        :notes => "MyText",
-        :history => "MyText"
+        :notes => "MyTextNotes",
+        :history => "MyTextHistory"
       ),
       stub_model(Recipe,
         :name => "Name",
         :prep_time => "Prep Time",
         :attribution => "Attribution",
-        :notes => "MyText",
-        :history => "MyText"
+        :notes => "MyTextNotes",
+        :history => "MyTextHistory"
       )
     ])
   end
@@ -26,7 +26,7 @@ describe "recipes/index" do
     assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => "Prep Time".to_s, :count => 2
     assert_select "tr>td", :text => "Attribution".to_s, :count => 2
-    assert_select "tr>td", :text => "MyText".to_s, :count => 2
-    assert_select "tr>td", :text => "MyText".to_s, :count => 2
+    assert_select "tr>td", :text => "MyTextNotes".to_s, :count => 2
+    assert_select "tr>td", :text => "MyTextHistory".to_s, :count => 2
   end
 end
